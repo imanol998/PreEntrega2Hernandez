@@ -1,11 +1,12 @@
 .header{
+    background-color: red;
     .menu{
         display: flex;
         .logo{
             display: flex;
             height: 200px;
             width: auto;
-            background-color: red;
+
         }
         .nav{
             font-size: 30px;
@@ -18,10 +19,16 @@
             align-items: center;
             width: 100vw;
             list-style-type: none;
+            li:hover{
+                animation: scale-down-center 1s ease infinite;
+            }
             a{
                 text-decoration: none;
                 color: yellow;
-            }
+            }  
         }
+    }
+    .logo:hover{
+    animation: scale-up-center 1s ease infinite;
     }
 }

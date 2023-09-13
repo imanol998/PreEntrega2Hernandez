@@ -3,6 +3,9 @@
   padding: 0;
 }
 
+.header {
+  background-color: red;
+}
 .header .menu {
   display: flex;
 }
@@ -10,7 +13,6 @@
   display: flex;
   height: 200px;
   width: auto;
-  background-color: red;
 }
 .header .menu .nav {
   font-size: 30px;
@@ -24,9 +26,15 @@
   width: 100vw;
   list-style-type: none;
 }
+.header .menu .nav li:hover {
+  animation: scale-down-center 1s ease infinite;
+}
 .header .menu .nav a {
   text-decoration: none;
   color: yellow;
+}
+.header .logo:hover {
+  animation: scale-up-center 1s ease infinite;
 }
 
 .grilla {
@@ -61,6 +69,9 @@
 }
 .grilla .par {
   margin: 30px;
+}
+.grilla iframe:hover {
+  animation: scale-up-center 1s ease 1;
 }
 
 footer {
@@ -103,6 +114,22 @@ footer {
   display: flex;
 }
 
+@keyframes scale-down-center {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0.6);
+  }
+}
+@keyframes scale-up-center {
+  0% {
+    transform: scale(0.3);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
 .maine {
   background-color: rgb(39, 39, 39);
   color: white;
