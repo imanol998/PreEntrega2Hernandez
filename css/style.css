@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.header .menu {
+  display: flex;
+}
+.header .menu .logo {
+  display: flex;
+  height: 200px;
+  width: auto;
+  background-color: red;
+}
+.header .menu .nav {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  background-color: red;
+  display: flex;
+  position: sticky;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100vw;
+  list-style-type: none;
+}
+.header .menu .nav a {
+  text-decoration: none;
+  color: yellow;
+}
+
+.grilla {
+  display: grid;
+  grid-template-columns: repeat(2, 50vw);
+  grid-template-areas: "video parrafo" "parrafo2 video2";
+  grid-template-rows: repeat(2, 650px);
+  align-items: center;
+  justify-items: center;
+  background-color: rgb(39, 39, 39);
+}
+.grilla .parrafo {
+  grid-area: parrafo;
+  margin: 100px;
+  font-size: 20px;
+  color: white;
+}
+.grilla .video {
+  grid-area: video;
+}
+.grilla .parrafo2 {
+  grid-area: parrafo2;
+  margin: 100px;
+  font-size: 20px;
+  color: white;
+}
+.grilla .video2 {
+  grid-area: video2;
+}
+.grilla .pri {
+  margin: 30px;
+}
+.grilla .par {
+  margin: 30px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.main {
+  display: flex;
+  height: 80vh;
+  flex-wrap: wrap;
+  align-content: center;
+}
+.main .cajita {
+  padding: 30px;
+  position: absolute;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+.main .cajita img {
+  max-height: 100%;
+  max-width: 100%;
+}
+.main .cajita .contenido {
+  color: white;
+  padding: 0;
+  margin: 0;
+}
+.main #carouselExample {
+  min-width: 800px;
+}
+.main .carousel_slide {
+  min-width: 50%;
+  max-width: 100%;
+  display: flex;
+}
+
+.maine {
+  background-color: rgb(39, 39, 39);
+  color: white;
+  text-align: center;
+  padding: 50px;
+  height: 1150px;
+}
+
+.mainep {
+  margin: 20px;
+}
+
+.body {
+  background-color: rgb(39, 39, 39);
+}
+
+.img {
+  width: 400px;
+  margin: 20px;
+}
+
+@media (min-width: 800px) and (max-width: 1325px) {
+  .grilla {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  .carousel-item {
+    max-width: 450px;
+  }
+  .main {
+    max-width: 450px;
+  }
+  .contenido {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    font-size: 15px;
+  }
+  .grilla {
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carousel-item {
+    max-width: 300px;
+  }
+  .carousel-inner {
+    max-width: 300px;
+  }
+}/*# sourceMappingURL=style.css.map */

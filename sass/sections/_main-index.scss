@@ -1,0 +1,36 @@
+.grilla{
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-areas: 
+    "video parrafo"
+    "parrafo2 video2";
+    grid-template-rows: repeat(2, 650px);
+    align-items: center;
+    justify-items: center;
+    background-color: rgb(39, 39, 39);
+    .parrafo{
+        grid-area: parrafo;
+        margin: 100px;
+        font-size: 20px;
+        color: white;
+    }
+    .video{
+        grid-area: video;
+    }
+    .parrafo2{
+        grid-area: parrafo2;
+        margin: 100px;
+        font-size: 20px;
+        color: white;
+    }
+    .video2{
+        grid-area: video2;
+    }
+    .pri{
+        margin: 30px;
+    }
+    .par{
+        margin: 30px;
+    }
+}
+
