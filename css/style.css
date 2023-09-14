@@ -3,6 +3,43 @@
   padding: 0;
 }
 
+@media (min-width: 800px) and (max-width: 1325px) {
+  .grilla {
+    background-color: rgb(39, 39, 39);
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+  }
+  .nav {
+    font-size: 20px;
+  }
+  .carousel-item {
+    max-width: 450px;
+  }
+  .main {
+    max-width: 450px;
+  }
+  .contenido {
+    font-size: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .nav {
+    font-size: 15px;
+  }
+  .grilla {
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carousel-item {
+    max-width: 300px;
+  }
+  .carousel-inner {
+    max-width: 300px;
+  }
+}
 .header {
   background-color: red;
 }
@@ -95,6 +132,8 @@ footer {
   color: black;
   display: flex;
   justify-content: center;
+  height: 80vh;
+  align-items: center;
 }
 .main .cajita img {
   max-height: 100%;
@@ -149,42 +188,4 @@ footer {
 .img {
   width: 400px;
   margin: 20px;
-}
-
-@media (min-width: 800px) and (max-width: 1325px) {
-  .grilla {
-    background-color: rgb(39, 39, 39);
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-  }
-  .nav {
-    font-size: 20px;
-  }
-  .carousel-item {
-    max-width: 450px;
-  }
-  .main {
-    max-width: 450px;
-  }
-  .contenido {
-    font-size: 20px;
-  }
-}
-@media (max-width: 800px) {
-  .nav {
-    font-size: 15px;
-  }
-  .grilla {
-    display: flex;
-    background-color: rgb(39, 39, 39);
-    flex-direction: column;
-    padding: 20px;
-  }
-  .carousel-item {
-    max-width: 300px;
-  }
-  .carousel-inner {
-    max-width: 300px;
-  }
 }/*# sourceMappingURL=style.css.map */

@@ -7,7 +7,8 @@
     grid-template-rows: repeat(2, 650px);
     align-items: center;
     justify-items: center;
-    background-color: rgb(39, 39, 39);
+    width: 100vw;
+    background-image: linear-gradient( orange , rgb(39, 39, 39));
     .parrafo{
         grid-area: parrafo;
         margin: 100px;
