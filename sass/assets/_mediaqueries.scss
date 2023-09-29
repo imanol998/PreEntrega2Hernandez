@@ -1,3 +1,20 @@
+@media (max-width: 800px){
+    .nav{
+        font-size: 13px;
+    }
+    .grilla{
+        display: flex;
+        background-color: rgb(39, 39, 39);
+        flex-direction: column;
+        padding: 20px;
+    }
+    .carousel-item{
+        max-width: 300px;
+    }
+    .carousel-inner{
+        max-width: 300px;
+    }
+}
 @media (min-width: 800px) and (max-width: 1325px){
     .grilla{
         background-color: rgb(39, 39, 39);
@@ -16,22 +33,5 @@
     }
     .contenido{
         font-size: 20px;
-    }
-}
-@media (max-width: 800px){
-    .nav{
-        font-size: 15px;
-    }
-    .grilla{
-        display: flex;
-        background-color: rgb(39, 39, 39);
-        flex-direction: column;
-        padding: 20px;
-    }
-    .carousel-item{
-        max-width: 300px;
-    }
-    .carousel-inner{
-        max-width: 300px;
     }
 }

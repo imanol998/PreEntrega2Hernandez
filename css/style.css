@@ -1,8 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
+@media (max-width: 800px) {
+  .nav {
+    font-size: 13px;
+  }
+  .grilla {
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    flex-direction: column;
+    padding: 20px;
+  }
+  .carousel-item {
+    max-width: 300px;
+  }
+  .carousel-inner {
+    max-width: 300px;
+  }
 }
-
 @media (min-width: 800px) and (max-width: 1325px) {
   .grilla {
     background-color: rgb(39, 39, 39);
@@ -23,23 +35,11 @@
     font-size: 20px;
   }
 }
-@media (max-width: 800px) {
-  .nav {
-    font-size: 15px;
-  }
-  .grilla {
-    display: flex;
-    background-color: rgb(39, 39, 39);
-    flex-direction: column;
-    padding: 20px;
-  }
-  .carousel-item {
-    max-width: 300px;
-  }
-  .carousel-inner {
-    max-width: 300px;
-  }
+* {
+  margin: 0;
+  padding: 0;
 }
+
 .header {
   background-color: red;
 }
@@ -81,7 +81,8 @@
   grid-template-rows: repeat(2, 650px);
   align-items: center;
   justify-items: center;
-  background-color: rgb(39, 39, 39);
+  width: 100vw;
+  background-image: linear-gradient(orange, rgb(39, 39, 39));
 }
 .grilla .parrafo {
   grid-area: parrafo;
@@ -122,6 +123,7 @@ footer {
   display: flex;
   height: 80vh;
   flex-wrap: wrap;
+  background-image: linear-gradient(orange, rgb(39, 39, 39));
   align-content: center;
 }
 .main .cajita {
@@ -170,7 +172,7 @@ footer {
   }
 }
 .maine {
-  background-color: rgb(39, 39, 39);
+  background-image: linear-gradient(orange, rgb(39, 39, 39));
   color: white;
   text-align: center;
   padding: 50px;
@@ -179,10 +181,6 @@ footer {
 
 .mainep {
   margin: 20px;
-}
-
-.body {
-  background-color: rgb(39, 39, 39);
 }
 
 .img {
