@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    height: 80vh;
+    flex-wrap: wrap;
+    background-image: linear-gradient( orange , rgb(39, 39, 39));
+    align-content: center;
+    .cajita {
+        padding: 30px;
+        position: absolute;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        color: black;
+        display: flex;
+        justify-content: center;
+        height: 80vh;
+        align-items: center;
+        img {
+            max-height: 100%;
+            max-width: 100%;
+        }
+        .contenido {
+            color: white;
+            padding: 0;
+            margin: 0;
+        }
+    }
+    #carouselExample{
+        min-width: 800px;
+    }
+    .carousel_slide{
+        min-width: 50%;
+        max-width: 100%;
+        display: flex;
+    }
+}

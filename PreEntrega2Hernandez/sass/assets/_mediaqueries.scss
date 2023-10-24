@@ -1,0 +1,37 @@
+@media (max-width: 800px){
+    .grilla{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;}
+    .header .menu .nav{
+        font-size: 13px;
+    }
+    .carousel-item{
+        max-width: 300px;
+    }
+    .carousel-inner{
+        max-width: 300px;
+    }
+    .main .cajita .contenido{
+        font-size: 13px;
+    }
+}
+@media (min-width: 800px) and (max-width: 1325px){
+    .grilla{
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+    }
+    .header .menu .nav{
+        font-size: 20px;
+    }
+    .carousel-item{
+        max-width: 450px;
+    }
+    .carousel-inner{
+        max-width: 450px;
+    }
+    .main .cajita .contenido{
+        font-size: 10px;
+    }
+}
